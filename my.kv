@@ -1,0 +1,23 @@
+WindowsManager:
+    FirstWindow:
+    SecondWindow:
+
+<FirstWindow>:
+    name: "first"
+
+    GridLayout:
+        cols: 1
+
+        GridLayout:
+            cols: 2
+            Label:
+                text: "Please choose A or B"
+            TextInput:
+                id: ans
+                multiline: False
+        Button:
+            text: "Next"
+            on_press: print(ans.text)
+
+<SecondWindow>:
+    name: "second"
